@@ -628,3 +628,5 @@ html { scroll-snap-type: y mandatory; scroll-behavior: auto; }
   .intro { max-width: 100%; }
   .j-canvas.at-intro .j-vignette { background: linear-gradient(180deg, rgba(20, 4, 3, 0.85) 0%, rgba(20, 4, 3, 0.6) 70%, rgba(20, 4, 3, 0.3) 100%); }
 }
+.end-ai { margin-top: 14px; text-align: left; padding: 12px 22px; border-radius: 14px; background: #fff7ea; border: 1px dashed var(--gold); color: var(--ink); font-size: 15.5px; }
+.end-ai b { color: var(--red); }

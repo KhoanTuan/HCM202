@@ -211,6 +211,9 @@ function End({ s }) {
           <ol>{s.sources.items.map((x) => <li key={x}>{x}</li>)}</ol>
         </motion.div>
       )}
+      <motion.p className="end-ai" variants={item}>
+        <b>Ứng dụng AI:</b> Dùng Claude để thiết kế web và bố cục
+      </motion.p>
       <motion.div className="end-actions" variants={item}>
         <button className="btn-gold" onClick={() => goTo(0)}>↑ Về khung đầu</button>
         <a className="btn-red" href="#/slide/1">Bản trình chiếu dự phòng</a>
