@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6d0f10" />
+    <title>Văn hóa còn thì dân tộc còn · Nhóm 6</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-52 -52 104 104'%3E%3Crect x='-52' y='-52' width='104' height='104' rx='20' fill='%238e1b1b'/%3E%3Cpolygon points='0,-40 9.4,-12.9 38,-12.4 15.2,4.9 23.5,32.4 0,16 -23.5,32.4 -15.2,4.9 -38,-12.4 -9.4,-12.9' fill='%23f1c94a'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="boot" style="position:fixed;inset:0;display:grid;place-items:center;background:#1a0b0a;color:#f1c94a;font:600 18px system-ui,sans-serif;text-align:center;padding:24px;z-index:1">Đang tải trang… nếu quá 10 giây vẫn thế này, bấm F12 → Console và chụp lỗi gửi mình.</div>
+    <script>
+      (function(){
+        function show(m){var b=document.getElementById('boot');if(!b)return;b.style.zIndex=99999;b.style.display='block';b.style.whiteSpace='pre-wrap';b.style.textAlign='left';b.style.color='#ffd9a0';b.style.fontSize='14px';b.textContent='LỖI KHI CHẠY TRANG:\n\n'+m+'\n\nCách sửa thường gặp: tắt mọi cửa sổ npm (Ctrl+C), chạy lại: npm install  rồi  npm run dev';}
+        window.addEventListener('error',function(e){show((e.message||'')+' '+(e.filename||''));});
+        window.addEventListener('unhandledrejection',function(e){show(String(e.reason&&e.reason.stack||e.reason));});
+      })();
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

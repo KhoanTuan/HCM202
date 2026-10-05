@@ -1,0 +1,47 @@
+/* =====================================================================
+   BẢNG MÀU "SƠN SON THẾP VÀNG – GIẤY DÓ"
+   Tương phản (WCAG 2.2 AA): chữ --ink trên --paper 15:1 · --red trên --paper 7.9:1
+   · --paper trên --red-deep 9.5:1 · --gold-soft trên --red-deep 6.7:1
+   Không đặt chữ vàng trên nền giấy (chỉ ~2:1) — vàng chỉ dùng cho viền, họa tiết.
+   ===================================================================== */
+:root {
+  --paper: #fbf6ec;
+  --paper-2: #f5ecdb;
+  --card: #fffaf1;
+  --line: #e3cfa8;
+  --ink: #2a1d17;
+  --ink-soft: #5a4335;
+  --red: #8e1b1b;
+  --red-bright: #a3191b;
+  --red-deep: #6d0f10;
+  --gold: #c9973a;
+  --gold-soft: #ecd08a;
+
+  --font-body: 'Be Vietnam Pro', system-ui, sans-serif;
+  --font-head: 'Lora', Georgia, serif;
+  --font-display: 'Playfair Display', 'Lora', Georgia, serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root { margin: 0; height: 100%; }
+body {
+  background: #1a0b0a;
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4 { margin: 0; font-weight: 700; }
+p { margin: 0; }
+button { font: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* màn hình chờ khi tải chế độ 3D (đặt ở đây để hiện ngay, trước khi tải xong code 3D) */
+.loading3d {
+  position: fixed; inset: 0; display: grid; place-items: center;
+  background: #2a0907; color: #f6e2b8; font-family: var(--font-head); font-size: 22px;
+}
